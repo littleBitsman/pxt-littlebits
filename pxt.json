@@ -1,5 +1,5 @@
 {
-    "name": "pxt-littlebits-led-matrix",
+    "name": "pxt-littlebits",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
@@ -23,5 +23,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
