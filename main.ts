@@ -1,7 +1,8 @@
 serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
     console.log(serial.readLine())
 })
-enum Colors {
+namespace LED_MATRIX {
+export enum Colors {
     WHITE = 0x01,
     RED = 0x02,
     ORANGE = 0x04,
@@ -21,7 +22,7 @@ enum Colors {
 }
 serial.setBaudRate(BaudRate.BaudRate57600)
 console.log("Start")
-class LedMatrixImage {
+export class LedMatrixImage {
     imageString: string = `
     . . . . . . . .
     . . . . . . . .
@@ -41,3 +42,4 @@ class LedMatrixImage {
 }
 console.log(Colors.BLACK)
 let item: LedMatrixImage = new LedMatrixImage()
+}
